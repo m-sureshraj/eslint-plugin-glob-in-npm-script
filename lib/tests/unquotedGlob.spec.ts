@@ -84,16 +84,16 @@ ruleTester.run('unquoted-glob', rule, {
       filename: 'package.json',
       errors: [
         {
-          message: 'disallow unquoted glob in NPM script: **/*.ts',
+          message: 'disallow unquoted glob: **/*.ts',
         },
         {
-          message: 'disallow unquoted glob in NPM script: **/*.js',
+          message: 'disallow unquoted glob: **/*.js',
         },
         {
-          message: 'disallow unquoted glob in NPM script: src/**/*.{ts,tsx}',
+          message: 'disallow unquoted glob: src/**/*.{ts,tsx}',
         },
         {
-          message: 'disallow unquoted glob in NPM script: @hello/journey-*',
+          message: 'disallow unquoted glob: @hello/journey-*',
         },
       ],
     },

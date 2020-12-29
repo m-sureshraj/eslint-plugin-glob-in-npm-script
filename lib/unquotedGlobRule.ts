@@ -33,7 +33,7 @@ function create(context: Rule.RuleContext): Rule.RuleListener {
             context.report({
               // @ts-ignore
               node,
-              message: `disallow unquoted glob in NPM script: ${glob}`,
+              message: `disallow unquoted glob: ${glob}`,
             });
           }
         });
