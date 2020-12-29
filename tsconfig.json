@@ -9,5 +9,6 @@
     "removeComments": true,
     "strict": true,
     "esModuleInterop": true
-  }
+  },
+  "exclude": ["./**/*.spec.ts"]
 }
