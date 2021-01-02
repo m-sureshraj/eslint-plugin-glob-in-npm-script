@@ -21,6 +21,9 @@
     "node": ">=10.13.0"
   },
   "scripts": {
+    "preversion": "npm test",
+    "version": "npm run build",
+    "postversion": "git push && git push --tags && npm publish",
     "prebuild": "rimraf build",
     "build": "tsc",
     "start": "tsc --watch",
