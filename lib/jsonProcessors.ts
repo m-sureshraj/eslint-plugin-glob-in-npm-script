@@ -18,8 +18,9 @@ export const jsonProcessors = {
     // Since the preprocess stage converts JSON to Object,
     // eslint runs js rules against it and produces unnecessary error messages.
     // But we're only interested in error messages produced by this plugin.
-    return messages
-      .flat()
+
+    return ([] as Linter.LintMessage[])
+      .concat(...messages)
       .filter(message => message.ruleId?.startsWith(pluginNameWithoutPrefix));
   },
 };

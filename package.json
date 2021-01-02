@@ -17,6 +17,9 @@
   "files": [
     "build"
   ],
+  "engines": {
+    "node": ">=10.13.0"
+  },
   "scripts": {
     "prebuild": "rimraf build",
     "build": "tsc",
