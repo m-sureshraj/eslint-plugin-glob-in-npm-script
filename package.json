@@ -1,6 +1,6 @@
 {
   "name": "eslint-plugin-glob-in-npm-script",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "Eslint plugin to catch unquoted glob usages in NPM scripts",
   "author": "Sureshraj <m.s.suresh100@gmail.com>",
   "license": "MIT",
